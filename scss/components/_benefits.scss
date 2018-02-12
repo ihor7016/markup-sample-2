@@ -1,0 +1,104 @@
+.benefits {
+  //height: 390px;
+
+  &__section {
+    width: 40%;
+    float: left;
+    margin: 60px 0 70px 0;
+
+    &:nth-child(2) {
+      width: 49%;
+      padding: 10px 0 0 0;
+      float: right;
+    }
+  }
+
+  &__article {
+    float: left;
+    width: 49%;
+
+    &:last-child {
+      float: right;
+    }
+
+    &-image {
+      width: 97%;
+    }
+  }
+
+  &__text {
+    margin: 21px 0 0 0;
+  }
+
+  &__article-heading {
+    margin: 25px 0 25px 0;
+  }
+
+  @media only screen and (max-width: $medium-break-point) {
+    padding: 0 $medium-padding;
+
+    &__article {
+      width: 49%;
+
+      &-image {
+        max-width: 220px;
+        height: auto;
+      }
+    }
+  }
+
+  @media only screen and (max-width: $small-break-point) {
+    &__heading {
+      font-size: 30px;
+    }
+
+    &__section {
+      margin: {
+        top: 42px;
+        bottom: 35px;
+      }
+    }
+
+    &__text {
+      font-size: 12px;
+      margin: {
+        top: 10px;
+        bottom: 20px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: $xsmall-break-point) {
+    &__section {
+      width: 100%;
+      margin: 30px 0 0;
+
+      &:nth-child(2) {
+        width: 100%;
+        margin: 0 0 28px;
+      }
+    }
+
+    &__text {
+      margin: {
+        top: 20px;
+      }
+    }
+
+    &__article {
+      width: 100%;
+
+      &-image {
+        height: 120px;
+        width: auto;
+        max-width: 400px;
+        margin: 0 auto;
+        display: block;
+      }
+    }
+
+    &__text {
+      margin-bottom: 20px;
+    }
+  }
+}

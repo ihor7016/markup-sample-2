@@ -1,0 +1,82 @@
+.faq {
+  //height: 525px;
+  background: $color-2;
+
+  &__heading {
+    text-align: center;
+    margin: 66px 0 20px 0;
+  }
+
+  &__subheading-text {
+    text-align: center;
+    margin: 0 0 50px 0;
+  }
+
+  &__questions {
+    overflow: hidden;
+    margin: 0 0 35px 0;
+  }
+
+  &__text {
+    margin: 25px 0 0 0;
+  }
+
+  &__question {
+    float: left;
+    width: 45%;
+    min-height: 140px;
+
+    &-heading {
+      margin: 10px 0 0 0;
+    }
+
+    &:nth-child(2n) {
+      float: right;
+    }
+  }
+
+  @media only screen and (max-width: $medium-break-point) {
+    padding: 0 $medium-padding;
+
+    &__questions {
+      margin-bottom: 0;
+    }
+
+    &__question {
+      min-height: 200px;
+      width: 48%;
+    }
+  }
+
+  @media only screen and (max-width: $small-break-point) {
+    &__heading {
+      margin: {
+        top: 50px;
+      }
+    }
+
+    &__question {
+      min-height: 200px;
+    }
+  }
+
+  @media only screen and (max-width: $xsmall-break-point) {
+    &__text {
+      margin-bottom: 20px;
+    }
+
+    &__question {
+      float: none;
+      width: 100%;
+      min-height: initial;
+    }
+
+    &__subheading-text {
+      margin-bottom: 20px;
+    }
+
+    &__question {
+      margin-bottom: 30px;
+    }
+  }
+}

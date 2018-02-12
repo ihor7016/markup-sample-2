@@ -1,0 +1,38 @@
+.screens {
+  height: 345px;
+  overflow: hidden;
+
+  &__image {
+    float: left;
+    width: 25%;
+    height: 100%;
+
+    @for $i from 1 through 4 {
+      &:nth-child(#{$i}) {
+        background: url('../img/screen-#{$i}.jpg') center/cover no-repeat;
+      }
+    }
+  }
+
+  @media only screen and (max-width: $medium-break-point) {
+    height: 184px;
+  }
+
+  @media only screen and (max-width: $small-break-point) {
+    height: 555px;
+
+    &__image {
+      width: 50%;
+      height: 50%;
+    }
+  }
+
+  @media only screen and (max-width: $xsmall-break-point) {
+    height: 345px;
+
+    &__image {
+      width: 50%;
+      height: 50%;
+    }
+  }
+}

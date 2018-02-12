@@ -1,0 +1,112 @@
+.header {
+  //height: 880px;
+  background: url('../img/bg.jpg') center/cover no-repeat;
+  text-align: center;
+  color: white;
+
+  &__logo-image {
+    margin: 90px 0 90px 0;
+  }
+
+  &__subheading {
+    font: normal normal 16px $basic-font-stack;
+    max-width: 615px;
+    margin: 0 auto 62px;
+    line-height: 24px;
+    letter-spacing: .01em;
+  }
+
+  &__heading {
+    color: white;
+    margin: 0 0 28px 0;
+  }
+
+  &__form {
+    background: white;
+    max-width: 340px;
+    margin: 0 auto 89px;
+    border-radius: 3px;
+
+    &-wrapper {
+      border: 0 none;
+      color: black;
+      padding: 30px;
+    }
+
+    &-legend {
+      font: normal normal 24px 'Roboto', $basic-font-stack;
+      padding: 40px 0 0 0;
+    }
+  }
+
+  &__field {
+    border: 0 none;
+    border-bottom: 1px solid $color-4;
+    display: block;
+    margin: 0 auto 26px;
+    width: 100%;
+    padding: 6px 2px;
+    font: normal normal 16px 'Roboto', $basic-font-stack;
+  }
+
+  &__button {
+    font: normal $medium-weight 16px 'Roboto', $basic-font-stack;
+    border: 0 none;
+    color: white;
+    background: $color-1;
+    border-radius: 3px;
+    padding: 12px 23px;
+    margin: 0 0 10px 0;
+  }
+
+  &__label {
+    font: normal normal 12px 'Roboto', $basic-font-stack;
+    color: $color-5;
+    display: block;
+    text-align: left;
+  }
+
+  @media only screen and (max-width: $small-break-point) {
+    padding: 0 $medium-padding;
+
+    &__logo-image {
+      margin-top: 80px;
+      margin-bottom: 60px;
+    }
+
+    &__subheading {
+      margin-bottom: 60px;
+    }
+
+    &__form {
+      margin-bottom: 78px;
+
+      &-wrapper {
+        padding: {
+          top: 22px
+        };
+      }
+    }
+
+    &__field {
+      margin-bottom: 22px;
+    }
+  }
+
+  @media only screen and (max-width: $xsmall-break-point) {
+    &__logo-image {
+      margin-top: 70px;
+      margin-bottom: 50px;
+    }
+
+    &__subheading {
+      margin-bottom: 40px;
+    }
+
+    &__form {
+      margin: {
+        bottom: 70px;
+      }
+    }
+  }
+}
